@@ -40,6 +40,13 @@
 }
 
 /* Index page End*/
+/* Auction page Begin*/
+
+#auction #auction-img{
+    box-shadow: 5px 5px #212121;
+}
+
+/* Auction page End*/
 /* Login page Begin*/
 
 #loginFormDiv {
