@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="The official website of the Art Gallery."
+    />
+    <!-- Link to icon - https://fontawesome.com/icons/palette?style=solid -->
+    <link rel="shortcut icon" href="./img/palette-solid.svg" type="image/svg" />
     <title>Home</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css"">
     <link rel="stylesheet" href="./css/style.css" />
@@ -43,8 +50,8 @@
       </h2>
     </header>
     <!-- Beginning of main -->
-    <main>
-      <div class="container-fluid" id="ImageCarousel">
+    <main class="mx-0">
+      <div class="container-fluid px-0" id="ImageCarousel">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -65,8 +72,9 @@
             <div class="carousel-item active">
               <img
                 src="./img/carousel-img-1.jpg"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="Man staring at a painting"
+                loading="lazy"
               />
               <div class="carousel-caption d-none d-md-block ">
                 <h5 class="text-white">Man staring at a painting</h5>
@@ -78,8 +86,9 @@
             <div class="carousel-item">
               <img
                 src="./img/carousel-img-2.jpg"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="Strokes"
+                loading="lazy"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="text-white">Strokes</h5>
@@ -89,8 +98,9 @@
             <div class="carousel-item">
               <img
                 src="./img/carousel-img-3.jpg"
-                class="d-block w-100"
-                alt="..."
+                class="d-block w-100 img-fluid"
+                alt="Tool of the trade"
+                loading="lazy"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="text-white">Tool of the trade</h5>
@@ -102,8 +112,9 @@
             <div class="carousel-item">
               <img
                 src="./img/carousel-img-4.jpg"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="Touch"
+                loading="lazy"
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="text-white">Touch</h5>
@@ -133,34 +144,57 @@
           </a>
         </div>
       </div>
-
-      <div class="container-fluid m-0">
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            possimus officia placeat debitis aut animi dolore perferendis eaque
-            explicabo doloribus, itaque repellat sint laborum repudiandae eius
-            aliquid magnam dicta molestiae ducimus quam dolorem. Porro, aut.
-            Laudantium cum, omnis, laborum necessitatibus quibusdam pariatur
-            officia quae voluptate unde nesciunt vitae aspernatur? Fugit
-            voluptas exercitationem quaerat eaque ab autem, nihil eum,
-            temporibus illum fuga odit omnis rerum facere ut! Voluptatem facilis
-            odit pariatur aspernatur reiciendis accusamus consectetur quia ad
-            repellendus, nobis vero aliquam alias rerum minima, sit sed iste aut
-            itaque deserunt illo sequi? Neque magni repellat sapiente! Earum
-            quod sapiente molestias ut doloremque explicabo. Consequatur
-            commodi, odit tenetur aliquam quam perspiciatis quos magni dolorem
-            voluptas voluptate placeat ipsum corrupti earum laborum neque,
-            eligendi minus deleniti debitis. Similique voluptas rem molestias
-            doloremque a autem perspiciatis dolorum, blanditiis voluptatibus,
-            quasi at enim quisquam ipsam facilis eius minima deleniti odit vero
-            adipisci dolore, esse quibusdam fuga odio? Mollitia obcaecati esse
-            eum id molestias aut, aspernatur perspiciatis nisi fugit in porro
-            quisquam. Exercitationem cumque eaque enim! Assumenda in fugiat
-            accusantium, perspiciatis, possimus qui sapiente, maxime veniam
-            blanditiis voluptate placeat ipsum? Beatae, ratione quibusdam nemo
-            ex earum sed, modi dicta esse sequi iusto cumque! Labore, ab
-            impedit!
+      <div class="container-fluid mx-0" id="AlternateImageSection">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <h4 class="text-center p-5">Man staring at a painting</h4>
+          </div>
+          <div class="col-md-6 px-0">
+            <img
+              src="./img/carousel-img-1.jpg"
+              loading="lazy"
+              class="img-fluid"
+              alt="Man staring at a painting"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 px-0 order-2 order-md-1">
+            <img
+              src="./img/carousel-img-2.jpg"
+              loading="lazy"
+              class="img-fluid"
+              alt="Strokes"
+            />
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <h4 class="text-center p-5">Strokes</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <h4 class="text-center p-5">Tool of the trade</h4>
+          </div>
+          <div class="col-md-6 px-0">
+            <img
+              src="./img/carousel-img-3.jpg"
+              loading="lazy"
+              class="img-fluid"
+              alt="Tool of the trade"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 px-0 order-2 order-md-1">
+            <img
+              src="./img/carousel-img-4.jpg"
+              loading="lazy"
+              class="img-fluid"
+              alt="Touch"
+            />
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <h4 class="text-center p-5">Touch</h4>
           </div>
         </div>
       </div>
@@ -218,20 +252,8 @@
         <a href="#"> FOSSIsAwesome</a>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
