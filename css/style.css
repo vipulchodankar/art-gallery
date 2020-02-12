@@ -1,0 +1,17 @@
+#loginButton {
+    border-radius: 30px;
+}
+
+
+/* Login page Begin*/
+
+#loginFormDiv {
+    border-radius: 5px;
+}
+
+#loginFormDiv button{
+    border-radius: 15px;
+    line-height: 15px;
+}
+
+/* Login page End*/
